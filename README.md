@@ -8,7 +8,7 @@ A Django CLI application that uses the Gemini 2.0 Flash Exp model to re-write an
 - Generates property summaries using Ollama model
 - Creates property ratings and reviews
 - Fully containerized with Docker
-- High code coverage (90%+)
+- High code coverage (90% +)
 - Uses PostgreSQL database
 - Implements Django ORM
 
