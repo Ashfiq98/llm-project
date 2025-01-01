@@ -16,7 +16,7 @@ A Django CLI application that uses the Gemini 2.0 Flash Exp model to re-write an
 
 - Docker and Docker Compose
 - Python 3.x
-- Google Cloud API key (for Gemini model)
+- Google Cloud API key (for Gemini model) from here : https://aistudio.google.com/
 - PostgreSQL
 
 ## Installation
