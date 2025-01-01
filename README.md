@@ -28,7 +28,7 @@ cd scrapy-project
 docker compose build
 docker compose up
 ```
- * For stopping container run:
+ * For stopping container:
 ```bash
 docker compose down
 ```
@@ -49,7 +49,7 @@ cd llm-project
 docker compose build
 docker compose up
 ```
-3. For stopping container run:
+3. For stopping container :
 ```bash
 docker compose down
 ```
