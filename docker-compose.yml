@@ -1,0 +1,24 @@
+services:
+  django:
+    build: .
+    container_name: django-con
+
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - DB_NAME=mydb
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - DB_HOST=scrapy-project-db-1
+      - DB_PORT=5432
+    networks:
+      - scrapy-project_default
+
+
+networks:
+  scrapy-project_default:
+    external: true
