@@ -1,3 +1,14 @@
 docker-compose run django python manage.py makemigrations
 docker-compose run django python manage.py migrate
 docker exec -it django-con python manage.py generate
+
+
+ python manage.py test
+
+# Method 1: Run coverage directly
+coverage run manage.py test
+coverage report
+
+# Method 2: Run with more detailed output
+coverage run manage.py test
+coverage html
