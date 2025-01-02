@@ -134,6 +134,8 @@ python manage.py test
 
 # Run tests with coverage
 python -m coverage run manage.py test
+# or
+coverage run manage.py test
 
 # Generate coverage report
 python -m coverage report
