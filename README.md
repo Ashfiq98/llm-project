@@ -52,7 +52,7 @@ cd llm-project
 ## Running the Application
 
 1. Ensure the Scrapy project container is running and has completed data fetching
-
+  * you must make a `.env` file in your root directory before build & run
 2. Build and start the main project Docker containers:
 ```bash
 docker compose build
