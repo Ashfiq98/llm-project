@@ -53,12 +53,19 @@ cd llm-project
 
 1. Ensure the Scrapy project container is running and has completed data fetching
   * you must make a `.env` file in your root directory before build & run
-2. Build and start the main project Docker containers:
+2. Build the main project Docker containers:
 ```bash
 docker compose build
+```
+3. run migrations:
+```bash
+docker-compose run django python manage.py makemigrations
+docker-compose run django python manage.py migrate
+```
+4. Start the Docker container : 
 docker compose up
 ```
-3. For stopping container :
+5. For stopping container :
 ```bash
 docker compose down
 ```
@@ -87,13 +94,13 @@ llm-project/
 └── manage.py
 ```
 
-3. In a new terminal, run migrations:
+6. run migrations:
 ```bash
 docker-compose run django python manage.py makemigrations
 docker-compose run django python manage.py migrate
 ```
 
-4. Run the property information processing command:
+7. Run the property information processing command:
 ```bash
 docker exec -it django-con python manage.py generate
 ```
@@ -155,8 +162,6 @@ python -m coverage report
 - property_id (Foreign Key)
 - rating
 - review
-
-
 
 ## Contributing
 
