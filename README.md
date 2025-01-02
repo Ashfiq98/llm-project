@@ -12,6 +12,15 @@ A Django CLI application that uses the Gemini 2.0 Flash Exp model to re-write an
 - Uses PostgreSQL database
 - Implements Django ORM
 
+## Technical Details
+
+- **Framework**: Django
+- **Database**: PostgreSQL
+- **Models**: Gemini 2.0 Flash Exp
+- **Container**: Docker
+- **Testing**: Django Test Framework with Coverage.py
+- **Data Fetching**: Scrapy project in separate container
+
 ## Prerequisites
 
 - Docker and Docker Compose
@@ -108,6 +117,15 @@ docker-compose run django coverage html
 ### Local Testing (Alternative)
 If you prefer to run tests locally (ensure you have all dependencies installed):
 ```bash
+# Create a virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
 # Install required packages
 pip install -r requirements.txt
 
@@ -136,14 +154,7 @@ python -m coverage report
 - rating
 - review
 
-## Technical Details
 
-- **Framework**: Django
-- **Database**: PostgreSQL
-- **Models**: Gemini 2.0 Flash Exp, Ollama
-- **Container**: Docker
-- **Testing**: Django Test Framework with Coverage.py
-- **Data Fetching**: Scrapy project in separate container
 
 ## Contributing
 
